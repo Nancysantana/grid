@@ -1,0 +1,104 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+#b {
+  background-color: #5ec9ea;
+  height: 200px;
+}
+
+#c {
+  background-color: #e836b1;
+  height: 200px;
+}
+
+#d {
+  background-color: #f7b93c;
+  height: 200px;
+}
+
+#e {
+  background-color: #ed5a5a;
+  height: 200px;
+}
+
+#f {
+  background: #41efb9;
+  height: 200px;
+}
+
+#g {
+  background-color: #92e542 ;
+  height: 200px;
+}
+
+#h {
+  background-color: #e486ea ;
+  height:400px ;
+}
+
+.conteiner {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;/* para centrar el contenedor */
+}
+
+.row-::before {
+  content: ' ';
+  display: table;/*es como display: block */
+}
+.row-:after {
+  clear: both;//limpiar
+}
+
+[class*='col-']{
+  min-height: 7px;
+  padding: 12px;
+  /* margin: 12px; se tendria que calcular el px  */
+  background-color: red;
+  border: 5px solid white;
+  float: left;
+}
+
+.col-12 {
+  background-color: #f7ea00;
+  height: 150px;
+}
+
+@media screen and (max-width: 480px){
+   #col-f, .col-9 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 33.33%;
+  }
+  #col-f {
+    height: 100px;
+  }
+}

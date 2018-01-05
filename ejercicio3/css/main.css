@@ -10,8 +10,10 @@
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
+.col-12 { width: 100%;
+  background-color: #f7ea00;
+  height: 150px;
+}
 
 * {
   box-sizing: border-box;
@@ -28,39 +30,39 @@ p {
   text-align: center;
 }
 
-#b {
+.col-b {
   background-color: #5ec9ea;
   height: 200px;
 }
 
-#c {
+.col-c {
   background-color: #e836b1;
   height: 200px;
 }
 
-#d {
+.col-d {
   background-color: #f7b93c;
   height: 200px;
 }
 
-#e {
+.col-e {
   background-color: #ed5a5a;
   height: 200px;
 }
 
-#f {
+.col-f {
   background: #41efb9;
   height: 200px;
 }
 
-#g {
-  background-color: #92e542 ;
+.col-g {
+  background-color: #92e542;
   height: 200px;
 }
 
-#h {
+.col-h {
   background-color: #e486ea ;
-  height:400px ;
+  height:400px;
 }
 
 .conteiner {
@@ -77,28 +79,28 @@ p {
   clear: both;//limpiar
 }
 
-[class*='col-']{
-  min-height: 7px;
-  padding: 12px;
+[class*='col-'] {
+  min-height: 10px;
+  padding: 7px;
   /* margin: 12px; se tendria que calcular el px  */
-  background-color: red;
-  border: 5px solid white;
+  border: 3px solid white;
   float: left;
 }
 
-.col-12 {
-  background-color: #f7ea00;
-  height: 150px;
-}
-
 @media screen and (max-width: 480px){
-   #col-f, .col-9 {
+  .col-h, .col-9 {
     width: 100%;
   }
-  .col-3 {
-    width: 33.33%;
-  }
-  #col-f {
-    height: 100px;
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+      }
